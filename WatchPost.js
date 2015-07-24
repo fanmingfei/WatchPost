@@ -73,14 +73,14 @@ var uploadEach = function (files) {
             console.log(files[eachI], 'x>', path.join(to, path.relative(base, files[eachI])));
             errorFile.push(files[eachI]);
             if (eachI < files.length) {
-                uploadEach(files)
+                uploadEach(files);
                 return;
             }
         } else {
             console.log(files[eachI], '->', path.join(to, path.relative(base, files[eachI])));
 
             if (eachI < files.length) {
-                uploadEach(files)
+                uploadEach(files);
                 return;
             } else {
                 startWatch();
