@@ -7,7 +7,7 @@ WatchPost
 
 先安装node、npm等工具~
 
-先填写好config.json 文件，然后在目录下执行 node main.js
+先填写好config.json 文件，然后在目录下执行 node WatchPost.js
 
 目前没有测试过Windows
 
