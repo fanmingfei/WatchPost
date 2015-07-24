@@ -15,9 +15,9 @@ WatchPost
 ### config.js 参数简介
 
     {
-        "receiver": "http://jiaowu/",
-        "base": "/Users/fanmingfei/ldsnwork/server/",
-        "to": "/data/www/jiaowu/server",
+        "receiver": "http://www.fanmingfei.cn/receiver.php",
+        "base": "/Users/fanmingfei/server/",
+        "to": "/data/www/server",
         "unwatchSuffix": [".swp"],
         "unwatchPath": [".git","Runtime"]
     }
