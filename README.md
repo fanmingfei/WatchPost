@@ -1,4 +1,4 @@
-# WatchPost 本地开发过程中课直接与服务器进行文件同步
+# WatchPost 本地开发过程中直接与服务器进行文件同步
 
 WatchPost
 版本： v1.0.0
