@@ -1,5 +1,6 @@
-# 本地开发过程中课直接与服务器进行文件同步
+# WatchPost 本地开发过程中课直接与服务器进行文件同步
 
+WatchPost
 版本： v1.0.0
 
 ## 使用方法：
@@ -13,13 +14,13 @@
 
 ### config.js 参数简介
 
-{
-    "receiver": "http://jiaowu/",
-    "base": "/Users/fanmingfei/ldsnwork/server/",
-    "to": "/data/www/jiaowu/server",
-    "unwatchSuffix": [".swp"],
-    "unwatchPath": [".git","Runtime"]
-}
+    {
+        "receiver": "http://jiaowu/",
+        "base": "/Users/fanmingfei/ldsnwork/server/",
+        "to": "/data/www/jiaowu/server",
+        "unwatchSuffix": [".swp"],
+        "unwatchPath": [".git","Runtime"]
+    }
 
 
 * receiver 接收文件的url
