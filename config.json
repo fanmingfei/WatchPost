@@ -2,6 +2,7 @@
     "receiver": "http://jiaowu/",
     "base": "/Users/fanmingfei/ldsnwork/server-tool/",
     "to": "/data/www/jiaowu/server",
-    "unwatchSuffix": [".DS_Store",".swp"],
-    "unwatchPath": [".git","Runtime"]
+    "unwatchSuffix": [".swp"],
+    "unwatchPathFirst": ["Thinkphp"],
+    "unwatchPath": [".git","Runtime",".DS_Store"]
 }

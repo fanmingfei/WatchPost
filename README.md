@@ -1,7 +1,7 @@
 # WatchPost 本地开发过程中直接与服务器进行文件同步
 
 WatchPost
-版本： v1.0.0
+版本： v1.0.1
 
 ## 使用方法：
 
@@ -19,7 +19,8 @@ WatchPost
         "base": "/Users/fanmingfei/server/",
         "to": "/data/www/server",
         "unwatchSuffix": [".swp"],
-        "unwatchPath": [".git","Runtime"]
+        "unwatchPath": [".git","Runtime"],
+        "unwatchPathFirst": [".git","Runtime"],
     }
 
 
@@ -37,6 +38,15 @@ WatchPost
 
 * unwatchSuffix 不进行监控的文件后缀名， 比如说一些没有用的 可能会出现的 .psd、.zip 之类的都不需要监控，注意这里是带"."的。
 
-* unwatchPath 不进行监控的目录，有些目录不需要进行监控，因为每次开启监控都要重新吧所有文件上传一次，像一些无需第一次更新的目录卸载上面，就不会在执行代码的时候把它上传上了，但是开始监控以后会实时监控这些目录。
+* unwatchPath 不进行监控的目录或文件。
+
+* unwatchPathFirst 执行命令时不需要上传的目录或文件，因为每次开启监控都要重新吧所有文件上传一次，像一些无需第一次更新的目录卸载上面，就不会在执行代码的时候把它上传上了，但是开始监控以后会实时监控这些目录。
+
+
+### 更新日志
+
+2015.8.26 v1.0.1
+
+对不进行监控的目录或文件喝第一次不监控的文件进行区分。
 
 

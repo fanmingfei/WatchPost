@@ -12,6 +12,7 @@ var base = config.base;
 var to = config.to;
 var unwatchSuffix = config.unwatchSuffix;
 var unwatchPath = config.unwatchPath;
+var unwatchPathFirst = config.unwatchPathFirst;
 var receiver = config.receiver;
 var option = function (f, curr, prev) {
     if (typeof f == "object" && prev === null && curr === null) {      // Finished walking the tree
@@ -56,6 +57,11 @@ var uploadEach = function (files) {
         unwatchSuffix.forEach(function (x) {
             if (path.extname(files[eachI]) === x) {
                 suffixFlag = true;
+            }
+        });
+        unwatchPathFirst.forEach(function (x) {
+            if (files[eachI].split(path.sep).indexOf(x) > -1) {
+                pathFlag = true;
             }
         });
         unwatchPath.forEach(function (x) {
