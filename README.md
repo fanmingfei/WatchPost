@@ -1,18 +1,38 @@
 # WatchPost 本地开发过程中直接与服务器进行文件同步
 
 WatchPost
-版本： v1.0.1
+版本： v1.0.2
 
 ## 使用方法：
 
-先安装node、npm等工具~
+1、安装WatchPost
 
-先填写好config.json 文件，然后在目录下执行 node WatchPost.js
+    npm install -g watchpost
 
-目前没有测试过Windows
+2、在任意目录下（一般在项目目录下），创建wp-conf.json
+
+    cd <项目目录>/
+    vi wp-conf.json
+
+    * 以下是wp-conf.json 内容
+    {
+        "receiver": "http://www.fanmingfei.cn/receiver.php",
+        "base": "/Users/fanmingfei/ldsnwork/server/",
+        "to": "/data/www/server",
+        "unwatchSuffix": [".swp"],
+        "unwatchPathFirst": ["Thinkphp"],
+        "unwatchPath": [".git","Runtime",".DS_Store"]
+    }
+
+3、在wp-conf.json 所在目录下 执行 watchpost
+
+    $watchpost
 
 
-### config.js 参数简介
+(目前没有测试过Windows)
+
+
+### wp-conf.json 参数简介
 
     {
         "receiver": "http://www.fanmingfei.cn/receiver.php",
@@ -45,8 +65,10 @@ WatchPost
 
 ### 更新日志
 
+2015.8.27 v1.0.2
+
+做成npm包进行发布。
+
 2015.8.26 v1.0.1
 
 对不进行监控的目录或文件喝第一次不监控的文件进行区分。
-
-

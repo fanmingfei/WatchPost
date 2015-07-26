@@ -1,0 +1,13 @@
+{
+    "name" : "watchpost",
+    "version" : "1.0.1",
+    "description" : "WatchPost 本地开发过程中直接与服务器进行文件同步",
+    "main" : "WatchPost",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/edire/WatchPost"
+     },
+    "readme": "README.md",
+    "bin": { "watchpost" : "WatchPost.js" },
+    "license" : "MIT"
+}

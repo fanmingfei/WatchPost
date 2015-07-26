@@ -1,13 +1,13 @@
-/**
- * watchPost.js
- * author: fanmingfei@ldsn
- */
+#!/usr/bin/env node
+
 var fs = require('fs');
 var path = require('path');
 var watch = require('./lib/watch.js');
 var upload = require('./lib/upload.js');
 
-var config = JSON.parse(fs.readFileSync('./config.json'));
+
+var confPath = path.join(process.cwd(), 'wp-conf.json');
+var config = JSON.parse(fs.readFileSync(confPath));
 var base = config.base;
 var to = config.to;
 var unwatchSuffix = config.unwatchSuffix;
