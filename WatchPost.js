@@ -7,7 +7,7 @@
  * License: MIT
  */
 
-var version = '1.0.3';
+var version = '1.0.4';
 
 var fs = require('fs');
 var path = require('path');
