@@ -165,6 +165,9 @@ function init () {
         var receiver = a.toString();
         rl.question('本地文件目录:(默认当前执行文件的目录)\r\n', function (a) {
             var base = a.toString();
+            if (base === ''){ 
+                base = process.cwd();
+            }
             rl.question('服务器文件目录:\r\n', function (a) {
                 var to = a.toString();
                 rl.question('过滤的后缀名(,分割):\r\n', function (a) {
@@ -174,7 +177,7 @@ function init () {
                         rl.question('不进行监控的目录，请填写(,分割)    :\r\n', function (a) {
                             var unwatchPath = JSON.stringify(a.split(','));
                             var content = '{\r\n' +
-                                '    "receiver":"' + receiver + '", \r\n' +
+                                '    "receiver": "' + receiver + '", \r\n' +
                                 '    "base": "' + base + '", \r\n' +
                                 '    "to": "' + to + '", \r\n' +
                                 '    "unwatchSuffix": ' + unwatchSuffix + ', \r\n' +
@@ -193,5 +196,4 @@ function init () {
             })
         })
     });
-
 }

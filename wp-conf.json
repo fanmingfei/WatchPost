@@ -1,8 +1,8 @@
 {
-    "receiver": "http://jiaowu/",
-    "base": "/Users/fanmingfei/personalwork/watchpost/",
-    "to": "/data/www/jiaowu/server",
-    "unwatchSuffix": [".swp"],
-    "unwatchPathFirst": ["Thinkphp"],
-    "unwatchPath": ["package.json"]
+    "receiver": "xx", 
+    "base": "x", 
+    "to": "x", 
+    "unwatchSuffix": ["x"], 
+    "unwatchPathFirst": ["x"], 
+    "unwatchPath": ["x"]
 }
